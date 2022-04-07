@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "labels",
+  "info": {
+    "name": "labels"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "articles": {
+      "via": "labels",
+      "collection": "article"
+    }
+  }
+}
